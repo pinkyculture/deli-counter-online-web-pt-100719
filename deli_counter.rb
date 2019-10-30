@@ -13,11 +13,7 @@ def line(array)
   end
 end
 
-def line_simple(array) 
-  current_line = "The simple line is currently:"
-  array.each.with_index(1) do |value, name|  
-  current_line << " #{name}. #{value},"    
-   end 
-  puts current_line
-end 
-  
+def take_a_number(line, new_person)
+  line.push(new_person) # could say: "line << new_person"
+  puts "Welcome, #{new_person}. You are number #{line.length} in line."
+end
