@@ -13,5 +13,11 @@ def line(array)
   end
 end
 
-def take_a_number(array , name)
+def line_simple(array) 
+  current_line = "The simple line is currently:"
+  array.each.with_index(1) do |value, indexemus|  
+  current_line << " #{indexemus}. #{value},"    
+   end 
+  puts current_line
+end 
   
