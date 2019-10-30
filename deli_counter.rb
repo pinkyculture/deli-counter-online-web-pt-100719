@@ -15,8 +15,8 @@ end
 
 def line_simple(array) 
   current_line = "The simple line is currently:"
-  array.each.with_index(1) do |value, indexemus|  
-  current_line << " #{indexemus}. #{value},"    
+  array.each.with_index(1) do |value, name|  
+  current_line << " #{name}. #{value},"    
    end 
   puts current_line
 end 
